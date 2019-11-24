@@ -1,0 +1,18 @@
+[
+  {
+    "id": 13341,
+    "pid": 1334,
+    "state": "open",
+    "iconCls": "",
+    "text": "角色列表",
+    "url": "./role/roleList.jsp"
+  },
+  {
+    "id": 13343,
+    "pid": 1334,
+    "state": "open",
+    "iconCls": "",
+    "text": "添加角色",
+    "url": "./role/addRole.jsp"
+  }
+]

@@ -1,0 +1,44 @@
+<!-- <input type="hidden" id="uuid" name="uuid"> -->
+<table class="editTable" style="cellspacing="1px">
+    <tr>
+        <td class="label">资源名称</td>
+        <td colspan="3">
+            <input type="text" name="name" data-toggle="topjui-textbox" data-options="required:true,width:450">
+        </td>
+    </tr>
+    <tr>
+        <td class="label">景点经度</td>
+        <td>
+            <input type="text" name="lng" data-toggle="topjui-textbox"  data-options="required:true">
+        </td>
+        <td class="label">景点纬度</td>
+        <td>
+            <input type="text" name="lat" data-toggle="topjui-textbox"  data-options="required:true">
+        </td>
+    </tr>
+    <tr>
+        <td class="label">联系电话</td>
+        <td><input type="text" name="tel" data-toggle="topjui-textbox"  data-options="required:false"></td>
+        <td class="label">景点详情地址</td>
+        <td>
+            <<input type="text" name="url" data-toggle="topjui-textbox"  data-options="required:false">
+        </td>
+    </tr>
+    <tr>
+        <td class="label">景点代表图</td>
+        <td colspan="3">
+            <input type="text" name="img" data-toggle="topjui-upload-lay"
+                   data-options="editable:false,
+                       buttonText:'上传图片',
+                       accept:'images',
+                       
+                       uploadUrl: '/jinan_tourism_gis/admin/adminImg-uploadLandMarkImg.action'">
+        </td>
+    </tr>
+    <tr>
+        <td class="label">景点详情</td>
+        <td colspan="3">
+            <input type="text" name="subject" data-toggle="topjui-textarea">
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 132721,
+    "pid": 13272,
+    "state": "open",
+    "iconCls": "",
+    "text": "游记列表",
+    "url": "./article/articleList.jsp"
+  },
+  {
+    "id": 132723,
+    "pid": 13272,
+    "state": "open",
+    "iconCls": "",
+    "text": "添加游记",
+    "url": "./article/addArticle.jsp"
+  }
+]

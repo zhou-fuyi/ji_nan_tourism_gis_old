@@ -1,0 +1,18 @@
+[
+  {
+    "id": 135011,
+    "pid": 13501,
+    "state": "open",
+    "iconCls": "",
+    "text": "景点列表",
+    "url": "./scenic/landMark/landMarkList.jsp"
+  },
+  {
+    "id": 13561,
+    "pid": 13502,
+    "state": "open",
+    "iconCls": "",
+    "text": "添加景点",
+    "url": "./scenic/landMark/addLandMark.jsp"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": 135031,
+    "pid": 13503,
+    "state": "open",
+    "iconCls": "",
+    "text": "景区类型列表",
+    "url": "./scenic/scenicType/scenicTypeList.jsp"
+  },
+  {
+    "id": 1359,
+    "pid": 13503,
+    "state": "open",
+    "iconCls": "",
+    "text": "添加景区类型",
+    "url": "./scenic/scenicType/addScenicType.jsp"
+  }
+]

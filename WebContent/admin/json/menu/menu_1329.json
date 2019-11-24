@@ -1,0 +1,18 @@
+[
+  {
+    "id": 13291,
+    "pid": 1329,
+    "state": "open",
+    "iconCls": "",
+    "text": "用户列表",
+    "url": "./user/userList.jsp"
+  },
+  {
+    "id": 13293,
+    "pid": 1329,
+    "state": "open",
+    "iconCls": "",
+    "text": "添加用户",
+    "url": "./user/addUser.jsp"
+  }
+]

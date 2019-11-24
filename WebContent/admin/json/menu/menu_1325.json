@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1350,
+    "pid": 1325,
+    "text": "景区管理",
+    "state": "closed",
+    "iconCls": "fa fa-heartbeat",
+    "url": ""
+  },
+  {
+    "id": 1327,
+    "pid": 1325,
+    "text": "文章管理",
+    "state": "closed",
+    "iconCls": "fa fa-bank",
+    "url": ""
+  },
+  {
+    "id": 1328,
+    "pid": 1325,
+    "text": "图片管理",
+    "state": "closed",
+    "iconCls": "fa fa-table",
+    "url": ""
+  },
+  {
+    "id": 1329,
+    "pid": 1325,
+    "text": "用户管理",
+    "state": "closed",
+    "iconCls": "fa fa-list",
+    "url": ""
+  },
+  {
+    "id": 1330,
+    "pid": 1325,
+    "text": "权限管理",
+    "state": "closed",
+    "iconCls": "fa fa-bar-chart",
+    "url": ""
+  },
+  {
+    "id": 1331,
+    "pid": 1325,
+    "text": "关于网站",
+    "state": "closed",
+    "iconCls": "fa fa-map",
+    "url": ""
+  }
+]

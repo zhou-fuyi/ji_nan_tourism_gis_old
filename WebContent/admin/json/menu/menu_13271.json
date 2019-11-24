@@ -1,0 +1,18 @@
+[
+  {
+    "id": 132712,
+    "pid": 13271,
+    "state": "open",
+    "iconCls": "",
+    "text": "资讯列表",
+    "url": "./info/infoList.jsp"
+  },
+  {
+    "id": 13274,
+    "pid": 13271,
+    "state": "open",
+    "iconCls": "",
+    "text": "添加资讯",
+    "url": "./info/addInfo.jsp"
+  }
+]

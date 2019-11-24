@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1332,
+    "pid": 1330,
+    "state": "closed",
+    "iconCls": "",
+    "text": "资源管理",
+    "url": ""
+  },
+  {
+    "id": 1334,
+    "pid": 1330,
+    "state": "closed",
+    "iconCls": "",
+    "text": "角色管理",
+    "url": ""
+  },
+  {
+    "id": 1356,
+    "pid": 1330,
+    "state": "open",
+    "iconCls": "",
+    "text": "所有用户列表",
+    "url": "./adminUserList.jsp"
+  }
+]

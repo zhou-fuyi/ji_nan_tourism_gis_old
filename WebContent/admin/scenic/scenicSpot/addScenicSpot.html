@@ -1,0 +1,135 @@
+<!-- <input type="hidden" id="uuid" name="uuid"> -->
+<table class="editTable" style="cellspacing="1px">
+    <tr>
+        <td class="label">风景区名称</td>
+        <td colspan="3">
+            <input type="text" name="name" data-toggle="topjui-textbox" data-options="required:true,width:450">
+        </td>
+    </tr>
+    <tr>
+        <td class="label">风景区宣传标语</td>
+        <td  colspan="3">
+            <input type="text" name="tagline" data-toggle="topjui-textbox"  data-options="required:false,width:450">
+        </td>
+    </tr>
+    <tr>
+         <td class="label">景点代表图</td>
+            <td colspan="2">
+                <input type="text" readonly="readonly" class="layui-input" id="img" name="defaultPhoto" data-options="width:620">
+                
+            </td>
+            <td>
+                <button style="padding-left: 0;margin-left: 0" class="layui-btn layui-btn-fluid" name="button" type="button" data-toggle="topjui-upload-lay"
+                       data-options="width:81,
+                       editable:true,
+                       buttonText:'上传图片',
+                       accept:'images',
+                       uploadUrl:'/jinan_tourism_gis/admin/adminImg-uploadLandMarkImg.action'"></button>
+                 
+            </td>
+    </tr>
+     <tr>
+        <td class="label">景区级别</td>
+        <td><input type="text" name="level" data-toggle="topjui-textbox"  data-options="required:false"></td>
+        <td class="label">景区票价</td>
+        <td>
+            <input type="text" name="ticketPrice" data-toggle="topjui-textbox"  data-options="required:false">
+        </td>
+     </tr>
+     <tr>
+         <td class="label">景区简介</td>
+         <td colspan="3">
+             <input type="text" name="intro" data-toggle="topjui-textarea">
+         </td>
+     </tr>
+     <tr>
+        <td class="label">景区称号</td>
+        <td><input type="text" name="cName" data-toggle="topjui-textbox"  data-options="required:false"></td>
+        <td class="label">景区管理机构</td>
+        <td>
+            <input type="text" name="management" data-toggle="topjui-textbox"  data-options="required:false">
+        </td>
+     </tr>
+      <tr>
+         <td class="label">景区特色景观</td>
+         <td colspan="3">
+             <input type="text" name="feature" data-toggle="topjui-textarea">
+         </td>
+     </tr>
+     <tr>
+        <td class="label">景区电话</td>
+        <td><input type="text" name="tel" data-toggle="topjui-textbox"  data-options="required:false"></td>
+        <td class="label">景区地址</td>
+        <td>
+            <input type="text" name="address" data-toggle="topjui-textbox"  data-options="required:false">
+        </td>
+     </tr>
+     <tr>
+         <td class="label">游览路线</td>
+         <td colspan="3">
+             <input type="text" name="line" data-toggle="topjui-textarea">
+         </td>
+     </tr>
+      <tr>
+         <td class="label">景区解说员说明</td>
+         <td colspan="3">
+             <input type="text" name="guideMan" data-toggle="topjui-textarea">
+         </td>
+     </tr>
+     <tr>
+        <td class="label">景区营业时间</td>
+        <td><input type="text" name="time" data-toggle="topjui-textbox"  data-options="required:false"></td>
+        <td class="label">景区游览时间</td>
+        <td>
+            <input type="text" name="costTime" data-toggle="topjui-textbox"  data-options="required:false">
+        </td>
+     </tr>
+     <tr>
+         <td class="label">景区配套设施服务</td>
+         <td colspan="3">
+             <input type="text" name="supporting" data-toggle="topjui-textarea">
+         </td>
+     </tr>
+     <tr>
+         <td class="label">景区游客服务中心</td>
+         <td colspan="3">
+             <input type="text" name="serviceCenter" data-toggle="topjui-textarea">
+         </td>
+     </tr>
+     <tr>
+        <td class="label">景区官网网址</td>
+        <td colspan="3">
+            <input type="text" name="website" data-toggle="topjui-textbox" data-options="required:false,width:450">
+        </td>
+    </tr>
+    <tr>
+        <td class="label">门票说明</td>
+        <td colspan="3">
+            <input type="text" name="priceDescription" data-toggle="topjui-textbox" data-options="required:false,width:450">
+        </td>
+    </tr>
+     <tr>
+         <td class="label">门票优惠政策说明</td>
+         <td colspan="3">
+             <input type="text" name="discount" data-toggle="topjui-textarea">
+         </td>
+     </tr>
+     <tr>
+         <td class="label">公交车路线指示</td>
+         <td colspan="3">
+             <input type="text" name="bus" data-toggle="topjui-textarea">
+         </td>
+     </tr>
+     <tr>
+         <td class="label">自驾车指南</td>
+         <td colspan="3">
+             <input type="text" name="driving" data-toggle="topjui-textarea">
+         </td>
+     </tr>
+     <tr>
+         <td class="label">景区停车场信息</td>
+         <td colspan="3">
+             <input type="text" name="park" data-toggle="topjui-textarea">
+         </td>
+     </tr>
+</table>

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 135021,
+    "pid": 13502,
+    "state": "open",
+    "iconCls": "",
+    "text": "景区详情列表",
+    "url": "./scenic/scenicSpot/scenicSpotList.jsp"
+  },
+  {
+    "id": 135022,
+    "pid": 13502,
+    "state": "open",
+    "iconCls": "",
+    "text": "添加景区详情",
+    "url": "./scenic/scenicSpot/addScenicSpot.jsp"
+  },
+  {
+    "id": 1357,
+    "pid": 13502,
+    "state": "open",
+    "iconCls": "",
+    "text": "树形表格（工具栏）",
+    "url": "./html/complex/treegrid.html"
+  },
+  {
+    "id": 1358,
+    "pid": 13502,
+    "state": "open",
+    "iconCls": "",
+    "text": "可编辑表格（工具栏）",
+    "url": "./html/complex/edatagrid.html"
+  },
+  {
+    "id": 13561,
+    "pid": 13502,
+    "state": "open",
+    "iconCls": "",
+    "text": "Tab表格+表单",
+    "url": "./html/complex/panel.html"
+  }
+]

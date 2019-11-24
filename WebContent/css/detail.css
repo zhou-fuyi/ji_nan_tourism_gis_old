@@ -1,0 +1,83 @@
+/*这里是景区级别*/
+.level-title {
+	font-size: 13px;
+	color: #777777
+}
+
+@media ( min-width : 992px) {
+	.level-title {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin-bottom: 0;
+		margin-right: 196px;
+		font-size: 14px
+	}
+
+.default-photo {
+	height: 480px;
+	background-size: cover;
+	background-position: center;
+	margin: 20px 0;
+	position: relative
+}
+
+.default-photo span {
+	position: absolute;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-size: 1.25em
+}
+
+@media ( max-width : 767px) {
+	.default-photo {
+		height: 200px;
+		margin: 5px 0
+	}
+}
+
+/*门票预定、景点介绍*/
+@media ( max-width : 767px) {
+	.name-header h1 {
+		font-size: 20px;
+		margin-bottom: 5px
+	}
+	.name-header h4 {
+		text-align: left
+	}
+	#firstTop {
+		display: none
+	}
+	.recomennd {
+		margin-bottom: 10px
+	}
+}
+.sceneTitle {
+	padding: 0px;
+	border: 1px #e7e5e6 solid;
+	background: white;
+	width: 100%
+}
+.sceneTitle li {
+	float: left;
+	font-size: 14px;
+	text-align: center;
+	color: #333;
+	list-style-type: none
+}
+
+.sceneTitle li a {
+	width: 105px;
+	height: 42px;
+	display: block;
+	border-right: 1px #e7e5e6 solid;
+	line-height: 42px;
+	background-color: white;
+	text-decoration: none;
+}
+
+.sceneTitle li a.now {
+	background: #008cd6;
+	color: white
+}

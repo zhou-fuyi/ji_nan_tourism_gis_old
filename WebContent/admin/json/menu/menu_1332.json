@@ -1,0 +1,18 @@
+[
+  {
+    "id": 13320,
+    "pid": 1332,
+    "state": "open",
+    "iconCls": "",
+    "text": "资源列表",
+    "url": "./resource/resourceList.jsp"
+  },
+  {
+    "id": 13321,
+    "pid": 1332,
+    "state": "open",
+    "iconCls": "",
+    "text": "添加资源",
+    "url": "./resource/addResource.jsp"
+  }
+]

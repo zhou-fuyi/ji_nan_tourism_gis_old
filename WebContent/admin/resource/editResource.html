@@ -1,0 +1,42 @@
+<div style="text-align: center">
+    <input type="hidden" id="id" name="id">
+    <table class="editTable">
+        <tr>
+            <td class="label">资源名称</td>
+            <td colspan="3">
+                <input type="text" name="resName" data-toggle="topjui-textbox"
+                       data-options="required:true,width:700">
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="label">权限组别</td>
+            <td>
+             <input type="text" name="remark"
+                       data-toggle="topjui-combobox"
+                       data-options="required:true,width:278,
+                       valueField:'code',
+                       hiddenName:'remark',
+                       url:_ctx + '/json/dictionary/models.json'">
+            </td>
+            <td class="label">是否启用</td>
+            <td>
+               <input type="text" name="isUsed"
+                       data-toggle="topjui-combobox"
+                       data-options="required:true,width:278,
+                       valueField:'code',
+                       hiddenName: 'isUsed',
+                       url:_ctx + '/json/dictionary/yesOrNo.json'">
+            </td>
+        </tr>
+        
+        
+        <tr>
+            <td class="label">资源介绍</td>
+            <td colspan="3">
+                <input type="text" name="detail" data-toggle="topjui-textarea"
+                       data-options="width:700,height:200" value="">
+            </td>
+        </tr>
+    </table>
+</div>

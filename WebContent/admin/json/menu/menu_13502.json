@@ -1,0 +1,18 @@
+[
+  {
+    "id": 135021,
+    "pid": 13502,
+    "state": "open",
+    "iconCls": "",
+    "text": "景区详情列表",
+    "url": "./scenic/scenicSpot/scenicSpotList.jsp"
+  },
+  {
+    "id": 135022,
+    "pid": 13502,
+    "state": "open",
+    "iconCls": "",
+    "text": "添加景区详情",
+    "url": "./scenic/scenicSpot/addScenicSpot.jsp"
+  }
+]

@@ -1,0 +1,68 @@
+<div style="text-align: center">
+    <input type="hidden" id="id" name="id">
+    <table class="editTable">
+        <tr>
+            <td class="label">景点名称</td>
+            <td colspan="3">
+                <input type="text" name="name" data-toggle="topjui-textbox"
+                       data-options="required:true,width:700">
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="label">景点经度</td>
+            <td>
+            <input type="text" name="lng" data-toggle="topjui-textbox"
+                       data-options="required:true,width:278">
+            </td>
+            <td class="label">景点纬度</td>
+            <td>
+                <input type="text" name="lat" data-toggle="topjui-textbox"
+                       data-options="required:true,width:278">
+            </td>
+        </tr>
+        <tr>
+            <td class="label">联系电话</td>
+            <td>
+                <input type="text" name="tel" data-toggle="topjui-textbox"
+                       data-options="width:278">
+            </td>
+            <td class="label">景点链接</td>
+            <td>
+                <input type="text" name="url"
+                       data-toggle="topjui-combobox"
+                       data-options="width:278,
+                       valueField:'code',
+                       url:_ctx + '/json/dictionary/yesOrNo.json'">
+            </td>
+        </tr>
+        <tr>
+            <td class="label">景点代表图</td>
+            <td colspan="2">
+                <input type="text" readonly="readonly" class="layui-input" id="img" name="img" data-options="width:620">
+                
+            </td>
+            <td>
+                <button style="padding-left: 0;margin-left: 0" class="layui-btn layui-btn-fluid" name="button" type="button" data-toggle="topjui-upload-lay"
+                       data-options="width:81,
+                       editable:true,
+                       buttonText:'上传图片',
+                       accept:'images',
+                       uploadUrl:'/jinan_tourism_gis/admin/adminImg-uploadLandMarkImg.action'"></button>
+                 
+            </td>
+        </tr>
+        <tr>
+            <td class="label">景点简介</td>
+            <td colspan="3">
+                <input type="text" name="subject" data-toggle="topjui-textarea"
+                       data-options="width:700,height:200" value="">
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+function open123(){
+	console.log("123")
+}
+</script>
