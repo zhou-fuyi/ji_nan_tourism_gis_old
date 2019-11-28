@@ -257,7 +257,7 @@
 
 		$("#defaultPhoto").fileinput({
 			language : 'zh',
-			uploadUrl : "/jinan_tourism_gis/admin/adminImg-saveScenicSpotDefaultPhoto.action",
+			uploadUrl : "/ji_nan_tourism_gis_old/admin/adminImg-saveScenicSpotDefaultPhoto.action",
 			autoReplace : true,
 			maxFileCount : 1,
 			allowedFileExtensions : [ "jpg", "png", "gif" ],

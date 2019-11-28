@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+
+
+	<bean id="adminLandMarkAction" class="com.tourism.gis.action.admin.LandMarkAction" scope="prototype">
+        <property name="landMarkService" ref="landMarkService"></property>
+    </bean>
+    <bean id="adminArticleAction" class="com.tourism.gis.action.admin.ArticleAction" scope="prototype">
+        <property name="articleService" ref="articleService"></property>
+    </bean>
+    <bean id="adminImageAction" class="com.tourism.gis.action.admin.ImageAction" scope="prototype">
+        <property name="imageService" ref="imageService"></property>
+    </bean>
+
+    <bean id="AdminScenicSpotAction" class="com.tourism.gis.action.admin.ScenicSpotAction" scope="prototype">
+        <property name="scenicSpotService" ref="scenicSpotService"></property>
+        <property name="resultService" ref="resultService"></property>
+    </bean>
+    <bean id="adminScenicTypeAction" class="com.tourism.gis.action.admin.ScenicTypeAction" scope="prototype">
+        <property name="scenicTypeService" ref="scenicTypeService"></property>
+    </bean>
+    <bean id="adminUserAction" class="com.tourism.gis.action.admin.AdminUserAction" scope="prototype">
+        <property name="adminUserService" ref="adminUserService"></property>
+    </bean>
+   <bean id="adminuserAction" class="com.tourism.gis.action.admin.UserAction" scope="prototype">
+       <property name="userService" ref="userService"></property>
+   </bean>
+    <bean id="adminRoleAction" class="com.tourism.gis.action.admin.RoleAction" scope="prototype">
+        <property name="roleService" ref="roleService"></property>
+    </bean>
+    <bean id="AdminResourceAction" class="com.tourism.gis.action.admin.ResourceAction" scope="prototype">
+    	<property name="resourceService" ref="resourceService"></property>
+    </bean>
+
+
+
+
+
+    <!-- 配置Action类,在Action配置中必须修改scope属性 -->
+    <!-- 因为在struts2中,action的创建时非单例的,但是在spring中,默认是单例模式 -->
+    <bean id="loginAction" class="com.tourism.gis.action.LoginAction" scope="prototype">
+        <property name="userService" ref="userService"></property>
+    </bean>
+    <bean id="landMarkAction" class="com.tourism.gis.action.LandMarkAction" scope="prototype">
+        <property name="landMarkService" ref="landMarkService"></property>
+    </bean>
+    <bean id="articleAction" class="com.tourism.gis.action.ArticleAction" scope="prototype">
+        <property name="articleService" ref="articleService"></property>
+        <property name="resultService" ref="resultService"></property>
+    </bean>
+    <bean id="imageAction" class="com.tourism.gis.action.ImageAction" scope="prototype">
+        <property name="imageService" ref="imageService"></property>
+    </bean>
+    <bean id="resultAction" class="com.tourism.gis.action.ResultAction" scope="prototype">
+        <property name="resultService" ref="resultService"></property>
+    </bean>
+    <bean id="scenicSpotAction" class="com.tourism.gis.action.ScenicSpotAction" scope="prototype">
+        <property name="scenicSpotService" ref="scenicSpotService"></property>
+    </bean>
+    <bean id="scenicTypeAction" class="com.tourism.gis.action.ScenicTypeAction" scope="prototype">
+        <property name="scenicTypeService" ref="scenicTypeService"></property>
+    </bean>
+    <bean id="userAction" class="com.tourism.gis.action.UserAction" scope="prototype">
+        <property name="userService" ref="userService"></property>
+    </bean>
+    <!-- <bean id="roleAction" class="com.zhoujian.gis.action.RoleAction" scope="prototype">
+        <property name="roleService" ref="roleService"></property>
+    </bean>
+    <bean id="resourceAction" class="com.zhoujian.gis.action.ResourceAction" scope="prototype">
+    	<property name="resourceService" ref="resourceService"></property>
+    </bean> -->
+    
+    
+    
+    <!-- 配置Service类 -->
+    <bean id="userService" class="com.tourism.gis.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"></property>
+        <property name="articleDao" ref="articleDao"></property>
+    </bean>
+    <bean id="landMarkService" class="com.tourism.gis.service.impl.LandMarkServiceImpl">
+        <property name="landMarkDao" ref="landMarkDao"></property>
+    </bean>
+    <bean id="articleService" class="com.tourism.gis.service.impl.ArticleServiceImpl">
+        <property name="articleDao" ref="articleDao"></property>
+        <property name="resultDao" ref="resultDao"></property>
+    </bean>
+    <bean id="imageService" class="com.tourism.gis.service.impl.ImageServiceImpl">
+        <property name="imageDao" ref="imageDao"></property>
+    </bean>
+    <bean id="resultService" class="com.tourism.gis.service.impl.ResultServiceImpl">
+        <property name="resultDao" ref="resultDao"></property>
+    </bean>
+    <bean id="scenicSpotService" class="com.tourism.gis.service.impl.ScenicSpotServiceImpl">
+        <property name="scenicSpotDao" ref="scenicSpotDao"></property>
+        <property name="resultDao" ref="resultDao"></property>
+    </bean>
+    <bean id="scenicTypeService" class="com.tourism.gis.service.impl.ScenicTypeServiceImpl">
+        <property name="scenicTypeDao" ref="scenicTypeDao"></property>
+    </bean>
+    <bean id="adminUserService" class="com.tourism.gis.service.impl.AdminUserServiceImpl">
+        <property name="adminUserDao" ref="adminUserDao"></property>
+    </bean>
+    <bean id="roleService" class="com.tourism.gis.service.impl.RoleServiceImpl">
+        <property name="roleDao"  ref="roleDao"></property>
+    </bean>
+    <bean id="resourceService" class="com.tourism.gis.service.impl.ResourceServiceImpl">
+    	<property name="resourceDao" ref="resourceDao"></property>
+    </bean>
+    
+    
+    
+    <!-- 配置DAO类 -->
+    <!-- <bean id="baseDao" class="com.zhoujian.gis.dao.BaseDao">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean> -->
+    <bean id="userDao" class="com.tourism.gis.dao.impl.UserDaoImpl">
+         <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="landMarkDao" class="com.tourism.gis.dao.impl.LandMarkDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="articleDao" class="com.tourism.gis.dao.impl.ArticleDapImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="imageDao" class="com.tourism.gis.dao.impl.ImageDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="resultDao" class="com.tourism.gis.dao.impl.ResultDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="scenicSpotDao" class="com.tourism.gis.dao.impl.ScenicSpotDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="scenicTypeDao" class="com.tourism.gis.dao.impl.ScenicTypeDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="adminUserDao" class="com.tourism.gis.dao.impl.AdminUserDaoImpl">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="roleDao" class="com.tourism.gis.dao.impl.RoleDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    <bean id="resourceDao" class="com.tourism.gis.dao.impl.ResourceDaoImpl">
+    	<property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+    
+</beans>

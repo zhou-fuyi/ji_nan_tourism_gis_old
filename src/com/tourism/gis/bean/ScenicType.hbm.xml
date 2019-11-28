@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-2 23:24:50 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.tourism.gis.bean.ScenicType" table="SCENICTYPE">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="color" type="java.lang.String">
+            <column name="COLOR" />
+        </property>
+        <property name="subject" type="java.lang.String">
+            <column name="subject"></column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -28,7 +28,7 @@
 <title>资讯列表</title>
 <script type="text/javascript">
 	function onload(){
-	    var url = "/jinan_tourism_gis/admin/adminBlog-getArticleSetByAdmin.action";
+	    var url = "/ji_nan_tourism_gis_old/admin/adminBlog-getArticleSetByAdmin.action";
 	    var args = {'sign' : '1'};
 	    $.getJSON(url,args,function(data){
 		    console.log(data);
@@ -119,7 +119,7 @@
 	
 	        $("#productDg").iDatagrid({
 	            id: 'productDg',
-	            url: '/jinan_tourism_gis/json/article/article.json',
+	            url: '/ji_nan_tourism_gis_old/json/article/article.json',
 	            columns: [[
 	            	{field: 'id', title: 'id', checkbox: true},
 	                {field: 'title', title: '标题', sortable: true},
@@ -218,7 +218,7 @@
 	                uncheckedMsg: '请先勾选要删除的数据',
 	                param: 'id:id'
 	            },
-	            url: '/jinan_tourism_gis/admin/adminBlog-deleteBlog'
+	            url: '/ji_nan_tourism_gis_old/admin/adminBlog-deleteBlog'
 	        });
 	
 	        $("#filter").iMenubutton({

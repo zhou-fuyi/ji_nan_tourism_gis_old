@@ -102,7 +102,7 @@ function submit(){
             	console.log("用户名或密码错误");
             }else if(data == "1"){
             	console.log("登陆成功,开始跳转");
-            	window.location.href = "/jinan_tourism_gis/admin/index.jsp"
+            	window.location.href = "/ji_nan_tourism_gis_old/admin/index.jsp"
             }else{
             	console.log("系统异常,登陆失败！");
             }
@@ -124,7 +124,7 @@ function logout() {
         closeOnConfirm: false
     }, function () {
         swal("操作成功！", "您已经成功下线。", "success");
-        window.location.href = "/jinan_tourism_gis/admin/admin-logout.action";
+        window.location.href = "/ji_nan_tourism_gis_old/admin/admin-logout.action";
     });
     return false;
 }

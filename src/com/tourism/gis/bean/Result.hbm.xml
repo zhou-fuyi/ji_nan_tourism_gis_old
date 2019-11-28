@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-2 23:20:48 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.tourism.gis.bean.Result" table="RESULT">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="subject" type="java.lang.String">
+            <column name="SUBJECT" length="1000"/>
+        </property>
+        <property name="keyWord" type="java.lang.String">
+            <column name="KEYWORD" />
+        </property>
+        <property name="time" type="java.sql.Timestamp">
+            <column name="TIME" />
+        </property>
+        <property name="type" type="java.lang.Integer">
+            <column name="TYPE" />
+        </property>
+        <property name="articleId" type="java.lang.String">
+            <column name="ARTICLEID" />
+        </property>
+        <property name="scenicSpotId" type="java.lang.String">
+            <column name="SCENICSPOTID" />
+        </property>
+    </class>
+</hibernate-mapping>

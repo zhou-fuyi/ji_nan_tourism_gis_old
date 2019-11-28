@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-2 23:20:48 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.tourism.gis.bean.Admin_User_Role_Mapping" table="ADMIN_USER_ROLE_MAPPING">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="adminUser" class="com.tourism.gis.bean.AdminUser" fetch="join">
+            <column name="ADMINUSER" />
+        </many-to-one>
+        <many-to-one name="user" class="com.tourism.gis.bean.User" fetch="join">
+            <column name="USER" />
+        </many-to-one>
+        <many-to-one name="role" class="com.tourism.gis.bean.Role" fetch="join">
+            <column name="ROLE" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

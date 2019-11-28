@@ -278,10 +278,10 @@
 						<s:debug></s:debug>
 						<input type="hidden" id="queryName">
 						<s:if test="#request.queryFlag == 0">
-							<input type="hidden" id="querResult" value="/jinan_tourism_gis/user/result-queryResultByKeyWord.action">
+							<input type="hidden" id="querResult" value="/ji_nan_tourism_gis_old/user/result-queryResultByKeyWord.action">
 						</s:if>
 						<s:else>
-							<input type="hidden" id="querResult" value="/jinan_tourism_gis/user/result-queryResult.action">
+							<input type="hidden" id="querResult" value="/ji_nan_tourism_gis_old/user/result-queryResult.action">
 						</s:else>
 						<s:iterator value="#request.resultList.beanList" var="result">
 							<div class="hr-line-dashed"></div>
@@ -295,7 +295,7 @@
 									</h3>
 								    <!-- 景点详情 -->
 								    
-								    <s:url value="jinan_tourism_gis/scenics/spot.html" var="jiadeScenicQuery">
+								    <s:url value="ji_nan_tourism_gis_old/scenics/spot.html" var="jiadeScenicQuery">
 								    	<s:param name="id"><s:property value="#result.scenicSpotId"/> </s:param>
 								    </s:url>
 									<a href='<s:property value="#scenicQuery"/>' class="search-link">
@@ -309,7 +309,7 @@
 								 	<h3>
 										<a href='<s:property value="#blogQuery"/>'><s:property value="#result.title"/></a>
 									</h3>
-									<s:url value="jinan_tourism_gis/article/blog.html" var="jiadeBlogQuery">
+									<s:url value="ji_nan_tourism_gis_old/article/blog.html" var="jiadeBlogQuery">
 								    	<s:param name="id"><s:property value="#result.articleId"/> </s:param>
 								    </s:url>
 									<a href='<s:property value="#blogQuery"/>' class="search-link">

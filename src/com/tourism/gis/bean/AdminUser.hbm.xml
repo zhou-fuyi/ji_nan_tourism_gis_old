@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-2 23:20:48 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.tourism.gis.bean.AdminUser" table="ADMINUSER">
+        <id name="adminId" type="java.lang.String">
+            <column name="ADMINID" />
+            <generator class="assigned" />
+        </id>
+        <property name="adminName" type="java.lang.String">
+            <column name="ADMINNAME" />
+        </property>
+        <property name="adminPass" type="java.lang.String">
+            <column name="ADMINPASS" />
+        </property>
+        <property name="adminCname" type="java.lang.String">
+            <column name="ADMINCNAME" />
+        </property>
+        <property name="adminAge" type="java.lang.Integer">
+            <column name="ADMINAGE" />
+        </property>
+        <property name="adminTel" type="java.lang.String">
+            <column name="ADMINTEL" />
+        </property>
+        <property name="adminEmail" type="java.lang.String">
+            <column name="ADMINEMAIL" />
+        </property>
+        <property name="adminPicture" type="java.lang.String">
+            <column name="ADMINPICTURE" />
+        </property>
+        <property name="registerTime" type="java.sql.Timestamp">
+            <column name="REGISTERTIME" />
+        </property>
+        <property name="lastLoginTime" type="java.sql.Timestamp">
+            <column name="LASTLOGINTIME" />
+        </property>
+        <set name="articleSet" table="ARTICLE" inverse="false" lazy="true">
+            <key>
+                <column name="adminId" />
+            </key>
+            <one-to-many class="com.tourism.gis.bean.Article" />
+        </set>
+    </class>
+</hibernate-mapping>

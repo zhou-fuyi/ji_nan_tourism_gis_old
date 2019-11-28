@@ -60,7 +60,7 @@ function checkValue(){
 $('#submitSelfPass').click(function(){
 	console.log(checkValue());
     if(checkValue()){
-    	var url = "/jinan_tourism_gis/user/users-updateUserPass.action";
+    	var url = "/ji_nan_tourism_gis_old/user/users-updateUserPass.action";
         var args = {
                 'userId' : $.trim($('#userId2').val()),
                 'userPass' : $.trim($('#userPass').val()),

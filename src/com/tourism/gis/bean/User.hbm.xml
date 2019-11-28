@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-2 23:20:48 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.tourism.gis.bean.User" table="USER">
+        <id name="userId" type="java.lang.String">
+            <column name="USERID" />
+            <generator class="assigned" />
+        </id>
+        <property name="userName" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="userPass" type="java.lang.String">
+            <column name="USERPASS" />
+        </property>
+        <property name="userCname" type="java.lang.String">
+            <column name="USERCNAME" />
+        </property>
+        <property name="userGender" type="java.lang.String">
+            <column name="USERGENDER" />
+        </property>
+        <property name="userAge" type="java.lang.Integer">
+            <column name="USERAGE" />
+        </property>
+        <property name="userTel" type="java.lang.String">
+            <column name="USERTEL" />
+        </property>
+        <property name="userEmail" type="java.lang.String">
+            <column name="USEREMAIL" />
+        </property>
+        <property name="userPicture" type="java.lang.String">
+            <column name="USERPICTURE" />
+        </property>
+        <property name="registerTime" type="java.sql.Timestamp">
+            <column name="REGISTERTIME" />
+        </property>
+        <property name="lastLoginTime" type="java.sql.Timestamp">
+            <column name="LASTLOGINTIME" />
+        </property>
+        <property name="isOnline" type="java.lang.Integer">
+            <column name="ISONLINE" />
+        </property>
+        <property name="userStatus" type="java.lang.Integer">
+            <column name="USERSTATUS" />
+        </property>
+        <property name="userLevel" type="java.lang.Integer">
+            <column name="USERLEVEL" />
+        </property>
+        <property name="activationCode" type="java.lang.String">
+            <column name="ACTIVATIONCODE" />
+        </property>
+        <property name="disabled" type="java.lang.Integer">
+            <column name="DISABLED" />
+        </property>
+        <property name="rePassword" type="java.lang.String">
+            <column name="REPASSWORD" />
+        </property>
+        <set name="articleSet" table="ARTICLE" inverse="false" lazy="true">
+            <key>
+                <column name="userId" />
+            </key>
+            <one-to-many class="com.tourism.gis.bean.Article" />
+        </set>
+    </class>
+</hibernate-mapping>

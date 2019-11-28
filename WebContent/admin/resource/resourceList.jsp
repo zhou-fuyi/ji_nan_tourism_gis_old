@@ -28,7 +28,7 @@
 <title>资源列表</title>
 <script type="text/javascript">
 	function onload(){
-	    var url = "/jinan_tourism_gis/admin/adminRes-getResourceSet.action";
+	    var url = "/ji_nan_tourism_gis_old/admin/adminRes-getResourceSet.action";
 	    var args = {};
 	    $.getJSON(url,args,function(data){
 		    console.log(data);
@@ -119,7 +119,7 @@
 	
 	        $("#productDg").iDatagrid({
 	            id: 'productDg',
-	            url: '/jinan_tourism_gis/json/resource/resource.json',
+	            url: '/ji_nan_tourism_gis_old/json/resource/resource.json',
 	            columns: [[
 	                {field: 'id', title: 'ID', checkbox: true},
 	                {field: 'resName', title: '资源名称', sortable: true},
@@ -177,7 +177,7 @@
 	            iconCls: 'fa fa-plus',
 	            tab: {
 	                title: '这是新的Tab窗口',
-	                href: '/jinan_tourism_gis/admin/resource/addResource.jsp'
+	                href: '/ji_nan_tourism_gis_old/admin/resource/addResource.jsp'
 	            },
 	            grid: productDg
 	        });
@@ -191,11 +191,11 @@
 	                width: 950,
 	                height: 500,
 	                href: _ctx + '/resource/editResource.html?id={id}',
-	                url: '/jinan_tourism_gis/admin/adminRes-getResourceById?id={id}',
+	                url: '/ji_nan_tourism_gis_old/admin/adminRes-getResourceById?id={id}',
 	                buttonsGroup: [
 	                    {
 	                        text: '更新',
-	                        url: '/jinan_tourism_gis/admin/adminRes-editResourceByTOPJUI?id={id}',
+	                        url: '/ji_nan_tourism_gis_old/admin/adminRes-editResourceByTOPJUI?id={id}',
 	                        iconCls: 'fa fa-save',
 	                        handler: 'ajaxForm',
 	                        btnCls: 'topjui-btn'

@@ -408,7 +408,7 @@
 		loadContent();
 		$('.queryButton').each(function(){
 			$(this).click(function(){
-				location.href = "/jinan_tourism_gis/user/result-queryByKeyWord.action?queryName=" + $(this).text();
+				location.href = "/ji_nan_tourism_gis_old/user/result-queryByKeyWord.action?queryName=" + $(this).text();
 			});
 		});
 		function searchResult(){

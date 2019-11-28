@@ -50,7 +50,7 @@ $('#submit').click(function(){
 		$('input[name="typeList"]:checked').each(function(){  
 			typeList.push($(this).val());//向数组中添加元素  
 		});
-		var url = "/jinan_tourism_gis/admin/adminSpot-addScenicSpot.action";
+		var url = "/ji_nan_tourism_gis_old/admin/adminSpot-addScenicSpot.action";
 		var args = {
 				'name' : $.trim($('#name').val()),
 				'tagline' : $.trim($('#tagline').val()),

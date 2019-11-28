@@ -332,7 +332,7 @@
 		     },
 		     onPageClicked: function (event, originalEvent, type, page) {
 			     //点击事件
-                location.href = "/jinan_tourism_gis/user/blog-loadArticles?sign=0&pageCode=" + page;
+                location.href = "/ji_nan_tourism_gis_old/user/blog-loadArticles?sign=0&pageCode=" + page;
             }
 	    }); 
 

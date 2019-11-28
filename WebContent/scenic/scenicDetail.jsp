@@ -292,8 +292,8 @@
 	<div class="container">
 		<div class="row clearfix">
 			<div class="col-md-12 column">
-				<div class="default-photo" style="background-image: url(/jinan_tourism_gis/img/placehold.jpg)">
-					<div id="defaultPhoto" class="default-photo" style="background-image: url(/jinan_tourism_gis/${requestScope.spot.defaultPhoto})"></div>
+				<div class="default-photo" style="background-image: url(/ji_nan_tourism_gis_old/img/placehold.jpg)">
+					<div id="defaultPhoto" class="default-photo" style="background-image: url(/ji_nan_tourism_gis_old/${requestScope.spot.defaultPhoto})"></div>
 				</div>
 			</div>
 		</div>
@@ -315,7 +315,7 @@
 
 		<div class="info ota" id="ota">
 			<div class="header">
-				<h4 class="title" style="background-image: url(/jinan_tourism_gis/img/search-icon-ticket.png)">门票预订</h4>
+				<h4 class="title" style="background-image: url(/ji_nan_tourism_gis_old/img/search-icon-ticket.png)">门票预订</h4>
 				<div class="clearfix"></div>
 				<div class="row table-title">
 					<div class="col-xs-4">供应商</div>
@@ -342,7 +342,7 @@
 		<a name="basic"></a>
 		<div class="info" id="basic">
 			<div class="header">
-				<h4 class="title" style="background-image: url(/jinan_tourism_gis/img/info.png)">景区简介</h4>
+				<h4 class="title" style="background-image: url(/ji_nan_tourism_gis_old/img/info.png)">景区简介</h4>
 
 				<div class="clearfix"></div>
 			</div>
@@ -484,7 +484,7 @@
 
 
 			<div class="header">
-				<h4 class="title" style="background-image: url(/jinan_tourism_gis/img/car.png)">交通指南</h4>
+				<h4 class="title" style="background-image: url(/ji_nan_tourism_gis_old/img/car.png)">交通指南</h4>
 				<div class="clearfix"></div>
 			</div>
 			<div class="map-area">
@@ -498,9 +498,9 @@
 							</div>
 							<div class="col-xs-4">
 								<div class="image"
-									style="background-image: url(/jinan_tourism_gis/img/placehold.jpg)">
+									style="background-image: url(/ji_nan_tourism_gis_old/img/placehold.jpg)">
 									<div class="image"
-										style="background-image: url(/jinan_tourism_gis/img/baimaiquan/1506328100-1506328100-200x_.JPG)"></div>
+										style="background-image: url(/ji_nan_tourism_gis_old/img/baimaiquan/1506328100-1506328100-200x_.JPG)"></div>
 								</div>
 							</div>
 						</div>
@@ -530,15 +530,15 @@
 			<div class="detail">
 				<ul class="with-icon">
 					<li>
-						<p style="background-image: url(/jinan_tourism_gis/img/bus.png)">公交车：</p>
+						<p style="background-image: url(/ji_nan_tourism_gis_old/img/bus.png)">公交车：</p>
 						<p><s:property value="#request.spot.bus"/></p>
 					</li>
 					<li>
-						<p style="background-image: url(/jinan_tourism_gis/img/car.png)">自驾车指南：</p>
+						<p style="background-image: url(/ji_nan_tourism_gis_old/img/car.png)">自驾车指南：</p>
 						<p style="border: none; background-color: #ffffff"><s:property value="#request.spot.driving"/></p>
 					</li>
 					<li>
-						<p style="background-image: url(/jinan_tourism_gis/img/park.png)">停车场信息:</p>
+						<p style="background-image: url(/ji_nan_tourism_gis_old/img/park.png)">停车场信息:</p>
 						<p><s:property value="#request.spot.park"/></p>
 					</li>
 				</ul>

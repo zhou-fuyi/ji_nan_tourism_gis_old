@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-2 23:20:48 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.tourism.gis.bean.Role_Resource_Mapping" table="ROLE_RESOURCE_MAPPING">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="role" class="com.tourism.gis.bean.Role" fetch="join">
+            <column name="ROLE" />
+        </many-to-one>
+        <many-to-one name="resource" class="com.tourism.gis.bean.Resource" fetch="join">
+            <column name="RESOURCE" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

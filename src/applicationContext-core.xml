@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+	<!-- 加载外部资源文件 -->
+	<context:property-placeholder location="classpath:jdbc.properties" />
+	
+	<!-- 添加c3p0数据源 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+	    <!-- 连接池基本信息 -->
+	    <property name="driverClass" value="${jdbc.driverClass}"></property>
+	    <property name="jdbcUrl" value="${jdbc.url}"></property>
+	    <property name="user" value="${jdbc.username}"></property>
+	    <property name="password" value="${jdbc.password}"></property>
+	</bean>
+	
+	<!-- 整合hibernate -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+	    <!-- 引入c3p0 -->
+	    <property name="dataSource" ref="dataSource"></property>
+	    <!-- hibernate基本属性设置,在这里有两种方式:一是引入外部hibernate配置文件,二是在此处进行配置 -->
+	    <property name="hibernateProperties">
+	        <props>
+	            <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+	            <prop key="hibernate.hbm2ddl.auto">update</prop><!-- 指定自动生成表的策略 -->
+	            <prop key="hibernate.show_sql">true</prop>
+	            <prop key="hibernate.format_sql">true</prop>
+	        </props>
+	    </property>
+	    <!-- .hbm.cfg 文件的引入 -->
+	    <property name="mappingLocations">
+	    <!-- mappingLocations:可以指定文件路径，还可以使用通配符
+	         mappingResources:必须指定具体的映射文件名 -->
+            <value>classpath:com/tourism/gis/bean/*.hbm.xml</value>
+	    </property>
+	</bean>
+	
+	<!-- 配置事务管理器 -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+	    <property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+</beans>

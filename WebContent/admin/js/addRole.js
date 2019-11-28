@@ -48,7 +48,7 @@ $('#submit').click(function(){
 	if(checkValue()){
 		console.log($('#roleForm').serializeArray());
 		//return false;
-		var url = "/jinan_tourism_gis/admin/adminRole-addRole.action";
+		var url = "/ji_nan_tourism_gis_old/admin/adminRole-addRole.action";
 		var args = {
 				'roleName' : $.trim($('#roleName').val()),
 				'isUsed' : $.trim($('#isUsed').val()),

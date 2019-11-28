@@ -47,7 +47,7 @@ function checkValue(){
 $('#submit').click(function(){
 	if(checkValue()){
 		console.log($('#landMarkForm').serializeArray());
-		var url = "/jinan_tourism_gis/admin/adminType-addScenicTypeByStruts.action";
+		var url = "/ji_nan_tourism_gis_old/admin/adminType-addScenicTypeByStruts.action";
 		var args = {
 				'name' : $.trim($('#name').val()),
 				'color' : $.trim($('#color').val()),

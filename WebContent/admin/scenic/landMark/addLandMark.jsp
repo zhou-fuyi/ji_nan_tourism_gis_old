@@ -115,7 +115,7 @@
 
 		$("#landMarkImg").fileinput({
 			language : 'zh',
-			uploadUrl : "/jinan_tourism_gis/admin/adminImg-saveLandMarkImg.action",
+			uploadUrl : "/ji_nan_tourism_gis_old/admin/adminImg-saveLandMarkImg.action",
 			autoReplace : true,
 			maxFileCount : 1,
 			allowedFileExtensions : [ "jpg", "png", "gif" ],

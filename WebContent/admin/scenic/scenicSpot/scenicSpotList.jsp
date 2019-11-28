@@ -28,7 +28,7 @@
 <title>景点列表</title>
 <script type="text/javascript">
 	function onload(){
-	    var url = "/jinan_tourism_gis/admin/adminSpot-getScenicSpotList.action";
+	    var url = "/ji_nan_tourism_gis_old/admin/adminSpot-getScenicSpotList.action";
 	    var args = {};
 	    $.getJSON(url,args,function(data){
 		    console.log(data);
@@ -119,7 +119,7 @@
 	
 	        $("#productDg").iDatagrid({
 	            id: 'productDg',
-	            url: '/jinan_tourism_gis/json/scenicSpot/scenicSpot.json',
+	            url: '/ji_nan_tourism_gis_old/json/scenicSpot/scenicSpot.json',
 	            columns: [[
 	                {field: 'id', title: 'ID', checkbox: true},
 	                {field: 'name', title: '景点名称', sortable: true},
@@ -203,7 +203,7 @@
 	                buttonsGroup: [
 	                    {
 	                        text: '保存',
-	                        url: '/jinan_tourism_gis/admin/adminSpot-addScenicSpotByTOPJUI.action',
+	                        url: '/ji_nan_tourism_gis_old/admin/adminSpot-addScenicSpotByTOPJUI.action',
 	                        iconCls: 'fa fa-plus',
 	                        handler: 'ajaxForm',
 	                        btnCls: 'topjui-btn-normal'
@@ -221,11 +221,11 @@
 	                width: 950,
 	                height: 500,
 	                href: _ctx + '/scenic/scenicSpot/editScenicSpot.html?id={id}',
-	                url: '/jinan_tourism_gis/admin/adminSpot-getScenicSpotById.action?id={id}',
+	                url: '/ji_nan_tourism_gis_old/admin/adminSpot-getScenicSpotById.action?id={id}',
 	                buttonsGroup: [
 	                    {
 	                        text: '更新',
-	                        url: '/jinan_tourism_gis/admin/adminSpot-editScenicStopByTOPJUI.action?id={id}',
+	                        url: '/ji_nan_tourism_gis_old/admin/adminSpot-editScenicStopByTOPJUI.action?id={id}',
 	                        iconCls: 'fa fa-save',
 	                        handler: 'ajaxForm',
 	                        btnCls: 'topjui-btn'
@@ -245,7 +245,7 @@
 	                uncheckedMsg: '请先勾选要删除的数据',
 	                param: 'id:id'
 	            },
-	            url: '/jinan_tourism_gis/admin/adminSpot-deleteScenicSpot'
+	            url: '/ji_nan_tourism_gis_old/admin/adminSpot-deleteScenicSpot'
 	        });
 	
 	        $("#filter").iMenubutton({

@@ -261,7 +261,7 @@ function logout() {
             $.iMessager.progress({
                 text: '正在退出中...'
             });
-            window.location.href = '/jinan_tourism_gis/admin-logout.action';
+            window.location.href = '/ji_nan_tourism_gis_old/admin-logout.action';
         }
     });
 }

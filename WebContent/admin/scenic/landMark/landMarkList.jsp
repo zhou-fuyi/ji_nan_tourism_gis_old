@@ -28,7 +28,7 @@
 <title>景点列表</title>
 <script type="text/javascript">
 	function onload(){
-	    var url = "/jinan_tourism_gis/admin/adminLand-getLandMarkList.action";
+	    var url = "/ji_nan_tourism_gis_old/admin/adminLand-getLandMarkList.action";
 	    var args = {};
 	    $.getJSON(url,args,function(data){
 		    console.log(data);
@@ -119,7 +119,7 @@
 	
 	        $("#productDg").iDatagrid({
 	            id: 'productDg',
-	            url: '/jinan_tourism_gis/json/landMark/landMark.json',
+	            url: '/ji_nan_tourism_gis_old/json/landMark/landMark.json',
 	            columns: [[
 	                {field: 'id', title: 'ID', checkbox: true},
 	                {field: 'name', title: '景点名称', sortable: true},
@@ -182,7 +182,7 @@
 	                buttonsGroup: [
 	                    {
 	                        text: '保存',
-	                        url: '/jinan_tourism_gis/admin/adminLand-addLandMark.action',
+	                        url: '/ji_nan_tourism_gis_old/admin/adminLand-addLandMark.action',
 	                        iconCls: 'fa fa-plus',
 	                        handler: 'ajaxForm',
 	                        btnCls: 'topjui-btn-normal'
@@ -200,11 +200,11 @@
 	                width: 950,
 	                height: 500,
 	                href: _ctx + '/scenic/landMark/editLandMark.html?id={id}',
-	                url: '/jinan_tourism_gis/admin/adminLand-getLandMarkById.action?id={id}',
+	                url: '/ji_nan_tourism_gis_old/admin/adminLand-getLandMarkById.action?id={id}',
 	                buttonsGroup: [
 	                    {
 	                        text: '更新',
-	                        url: '/jinan_tourism_gis/admin/adminLand-editLandMark.action?id={id}',
+	                        url: '/ji_nan_tourism_gis_old/admin/adminLand-editLandMark.action?id={id}',
 	                        iconCls: 'fa fa-save',
 	                        handler: 'ajaxForm',
 	                        btnCls: 'topjui-btn'
@@ -224,7 +224,7 @@
 	                uncheckedMsg: '请先勾选要删除的数据',
 	                param: 'id:id'
 	            },
-	            url: '/jinan_tourism_gis/admin/adminLand-deleteLandMark'
+	            url: '/ji_nan_tourism_gis_old/admin/adminLand-deleteLandMark'
 	        });
 	
 	        $("#filter").iMenubutton({

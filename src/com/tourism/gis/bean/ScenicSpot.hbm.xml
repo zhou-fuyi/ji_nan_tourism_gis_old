@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-2 23:24:50 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.tourism.gis.bean.ScenicSpot" table="SCENICSPOT">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="tagline" type="java.lang.String">
+            <column name="TAGLINE" />
+        </property>
+        <property name="level" type="java.lang.String">
+            <column name="LEVEL" />
+        </property>
+        <property name="defaultPhoto" type="java.lang.String">
+            <column name="DEFAULTPHOTO" />
+        </property>
+        <property name="ticketPrice" type="java.lang.String">
+            <column name="TICKETPRICE" />
+        </property>
+        <property name="intro" type="java.lang.String">
+            <column name="INTRO" length="1000"/>
+        </property>
+        <property name="cName" type="java.lang.String" access="field">
+            <column name="CNAME" />
+        </property>
+        <property name="feature" type="java.lang.String">
+            <column name="FEATURE" length="1000" />
+        </property>
+        <!-- <list name="typeList" inverse="false" table="SCENICTYPE" lazy="true">
+            <key>
+                <column name="ID" />
+            </key>
+            <list-index></list-index>
+            <one-to-many class="com.tourism.gis.bean.ScenicType" />
+        </list> -->
+        <property name="line" type="java.lang.String">
+            <column name="LINE" length="1000" />
+        </property>
+        <property name="tel" type="java.lang.String">
+            <column name="TEL" />
+        </property>
+        <property name="guideMan" type="java.lang.String">
+            <column name="GUIDEMAN" length="1000" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="time" type="java.lang.String">
+            <column name="TIME" />
+        </property>
+        <property name="supporting" type="java.lang.String">
+            <column name="SUPPORTING" length="1000" />
+        </property>
+        <property name="costTime" type="java.lang.String">
+            <column name="COSTTIME" />
+        </property>
+        <property name="website" type="java.lang.String">
+            <column name="WEBSITE" />
+        </property>
+        <property name="serviceCenter" type="java.lang.String">
+            <column name="SERVICECENTER" length="1000"/>
+        </property>
+        <property name="priceDescription" type="java.lang.String">
+            <column name="PRICEDESCRIPTION" length="1000" />
+        </property>
+        <property name="discount" type="java.lang.String">
+            <column name="DISCOUNT" length="1000" />
+        </property>
+        <!-- <list name="photoList" inverse="false" table="IMAGE" lazy="true">
+            <key>
+                <column name="ID" />
+            </key>
+            <list-index></list-index>
+            <one-to-many class="com.tourism.gis.bean.Image" />
+        </list> -->
+        <property name="bus" type="java.lang.String">
+            <column name="BUS" length="1000" />
+        </property>
+        <property name="driving" type="java.lang.String">
+            <column name="DRIVING" length="1000" />
+        </property>
+        <property name="park" type="java.lang.String">
+            <column name="PARK" length="1000" />
+        </property>
+        <!-- <many-to-one name="landMark" class="com.tourism.gis.bean.LandMark" fetch="join">
+            <column name="LANDMARK" />
+        </many-to-one> -->
+        <property name="sign" type="java.lang.Integer">
+            <column name="SIGN" />
+        </property>
+        <property name="releaseDate" type="java.sql.Timestamp">
+            <column name="RELEASEDATE" />
+        </property>
+        <property name="management" type="java.lang.String">
+            <column name="MANAGEMENT" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -21,11 +21,11 @@
 
 <link rel="stylesheet" type="text/css" href='<s:url value="/css/blog.css"></s:url>' />
 
-<link rel="stylesheet" type="text/css" href="/jinan_tourism_gis/easyui/themes/default/easyui.css">
-<link rel="stylesheet" type="text/css" href="/jinan_tourism_gis/easyui/themes/icon.css">
-<script type="text/javascript" src="/jinan_tourism_gis/easyui/jquery.min.js"></script>
-<script type="text/javascript" src="/jinan_tourism_gis/easyui/jquery.easyui.min.js"></script>
-<script type="text/javascript" src="/jinan_tourism_gis/easyui/locale/easyui-lang-zh_CN.js"></script>
+<link rel="stylesheet" type="text/css" href="/ji_nan_tourism_gis_old/easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="/ji_nan_tourism_gis_old/easyui/themes/icon.css">
+<script type="text/javascript" src="/ji_nan_tourism_gis_old/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="/ji_nan_tourism_gis_old/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/ji_nan_tourism_gis_old/easyui/locale/easyui-lang-zh_CN.js"></script>
 
 
 <!-- fileInput -->
@@ -294,7 +294,7 @@
 								<div class="col-md-12 column">
 									<div class="jumbotron">
 										<div style="text-align: center">
-											<img alt="" src='/jinan_tourism_gis<s:property value="#session.user.userPicture"/>'>
+											<img alt="" src='/ji_nan_tourism_gis_old<s:property value="#session.user.userPicture"/>'>
 											<h1>
 												<s:property value="#session.user.userName"/>
 											</h1>
@@ -633,7 +633,7 @@
 
 		$("#userSelfImg").fileinput({
 			language : 'zh',
-			uploadUrl : "/jinan_tourism_gis/user/img-saveUserPicture.action",
+			uploadUrl : "/ji_nan_tourism_gis_old/user/img-saveUserPicture.action",
 			autoReplace : true,
 			maxFileCount : 1,
 			allowedFileExtensions : [ "jpg", "png", "gif" ],
@@ -644,7 +644,7 @@
 			if (res != -1) {
 				$('#userPicture').val(res);
 				console.log(res);
-				var url = "/jinan_tourism_gis/user/users-updateUserPicture.action";
+				var url = "/ji_nan_tourism_gis_old/user/users-updateUserPicture.action";
 				var args = {'userPicture' : res};
 				$.getJSON(url, args, function(result){
 					if(result == 1){
@@ -680,7 +680,7 @@
 		     },
 		     onPageClicked: function (event, originalEvent, type, page) {
 			     //点击事件
-                location.href = "/jinan_tourism_gis/user/users-loadUserArticles?pageCode=" + page;
+                location.href = "/ji_nan_tourism_gis_old/user/users-loadUserArticles?pageCode=" + page;
             }
 	    }); 
 		
@@ -717,7 +717,7 @@
     		}else if(content==null || content==''){
     			alert("请输入内容！");
     		}else{
-    			$.post("/jinan_tourism_gis/blog-addBlog.action",{'title':title,'content':content,'subject':ue1.getContentTxt().substr(0,155),'keyWord':keyWord,'sign':blogTypeId},function(result){
+    			$.post("/ji_nan_tourism_gis_old/blog-addBlog.action",{'title':title,'content':content,'subject':ue1.getContentTxt().substr(0,155),'keyWord':keyWord,'sign':blogTypeId},function(result){
         			console.log(result);
     				if(result == "1"){
     					alert("游记发布成功！");
@@ -751,7 +751,7 @@
     		}else if(content==null || content==''){
     			alert("请输入内容！");
     		}else{
-    			$.post("/jinan_tourism_gis/blog-editUserArticle.action",{'id':$('#id').val(),'title':title,'content':content,'subject':ue.getContentTxt().substr(0,155),'keyWord':keyWord,'sign':blogTypeId},function(result){
+    			$.post("/ji_nan_tourism_gis_old/blog-editUserArticle.action",{'id':$('#id').val(),'title':title,'content':content,'subject':ue.getContentTxt().substr(0,155),'keyWord':keyWord,'sign':blogTypeId},function(result){
         			console.log(result);
     				if(result == "1"){
     					alert("游记修改成功！");
@@ -793,7 +793,7 @@
              //modal.find('.modal-title').text('New message to ' + recipient)
              // modal.find('.modal-body input').val(recipient)
              modal.find('#id').val(articleId) //  找到 colorName 并赋值
-             var url = "/jinan_tourism_gis/blog-getUserArticleById.action";
+             var url = "/ji_nan_tourism_gis_old/blog-getUserArticleById.action";
              var args = {'id' : articleId};
          
              $.getJSON(url, args, function(data){
@@ -825,13 +825,13 @@
           	    }, function () {
           	        swal("操作成功！", "您已经成功删除。", "success");
           	       
-          	        window.location.href = "/jinan_tourism_gis/user/blog-deleteArticleByUser.action?id=" + id;
+          	        window.location.href = "/ji_nan_tourism_gis_old/user/blog-deleteArticleByUser.action?id=" + id;
           	    });
            });
 
          $('#submitSelfInfo').click(function(){
              console.log($('#userSelfAction').serializeArray());
-             var url = "/jinan_tourism_gis/user/users-updateUserInfo.action";
+             var url = "/ji_nan_tourism_gis_old/user/users-updateUserInfo.action";
              var args = {
                      'userId' : $.trim($('#userId').val()),
                      'userName' : $.trim($('#userName').val()),

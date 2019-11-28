@@ -28,7 +28,7 @@
 <title>角色列表</title>
 <script type="text/javascript">
 	function onload(){
-	    var url = "/jinan_tourism_gis/admin/adminRole-getRoleSet.action";
+	    var url = "/ji_nan_tourism_gis_old/admin/adminRole-getRoleSet.action";
 	    var args = {};
 	    $.getJSON(url,args,function(data){
 		    console.log(data);
@@ -119,7 +119,7 @@
 	
 	        $("#productDg").iDatagrid({
 	            id: 'productDg',
-	            url: '/jinan_tourism_gis/json/role/role.json',
+	            url: '/ji_nan_tourism_gis_old/json/role/role.json',
 	            columns: [[
 	                {field: 'id', title: 'ID', checkbox: true},
 	                {field: 'roleName', title: '角色名称', sortable: true},

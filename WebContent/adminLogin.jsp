@@ -46,7 +46,7 @@
 				</form>
 			</div>
 			<footer>
-				<p>Zhoujian © www.jinan_tourism_gis.cn</p>
+				<p>Zhoujian © www.ji_nan_tourism_gis_old.cn</p>
 			</footer>
 		</div>
 		<script type="text/javascript" src="plugins/layui/layui.js"></script>

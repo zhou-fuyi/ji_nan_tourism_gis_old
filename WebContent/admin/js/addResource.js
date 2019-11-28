@@ -67,7 +67,7 @@ $('#submit').click(function(){
 	if(checkValue()){
 		console.log($('#roleForm').serializeArray());
 		//return false;
-		var url = "/jinan_tourism_gis/admin/adminRes-addResource.action";
+		var url = "/ji_nan_tourism_gis_old/admin/adminRes-addResource.action";
 		var args = {
 				'resName' : $.trim($('#resName').val()),
 				'remark' : $.trim($('#remark').val()),

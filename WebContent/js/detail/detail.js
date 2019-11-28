@@ -40,7 +40,7 @@ function initMap(lag, lnt) {
 	        }
 	    }, {enableHighAccuracy: true})*/
 
-	var myIcon = new BMap.Icon("/jinan_tourism_gis/img/location-pin-blue.png", new BMap.Size(32, 32), {
+	var myIcon = new BMap.Icon("/ji_nan_tourism_gis_old/img/location-pin-blue.png", new BMap.Size(32, 32), {
 		anchor: new BMap.Size(16, 32),
 		imageSize: new BMap.Size(32, 32)
 	});

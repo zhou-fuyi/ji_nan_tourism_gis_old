@@ -21,11 +21,11 @@
 <link href="css/animate.min.css" rel="stylesheet">
 
 
-<link rel="stylesheet" type="text/css" href="/jinan_tourism_gis/easyui/themes/default/easyui.css">
-<link rel="stylesheet" type="text/css" href="/jinan_tourism_gis/easyui/themes/icon.css">
-<script type="text/javascript" src="/jinan_tourism_gis/easyui/jquery.min.js"></script>
-<script type="text/javascript" src="/jinan_tourism_gis/easyui/jquery.easyui.min.js"></script>
-<script type="text/javascript" src="/jinan_tourism_gis/easyui/locale/easyui-lang-zh_CN.js"></script>
+<link rel="stylesheet" type="text/css" href="/ji_nan_tourism_gis_old/easyui/themes/default/easyui.css">
+<link rel="stylesheet" type="text/css" href="/ji_nan_tourism_gis_old/easyui/themes/icon.css">
+<script type="text/javascript" src="/ji_nan_tourism_gis_old/easyui/jquery.min.js"></script>
+<script type="text/javascript" src="/ji_nan_tourism_gis_old/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="/ji_nan_tourism_gis_old/easyui/locale/easyui-lang-zh_CN.js"></script>
 <title>写博客</title>
 <style type="text/css">
 .mylogo h3 {
@@ -326,8 +326,8 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	
 	<!-- Ueditor编辑器插件 -->
-	<script type="text/javascript" src="/jinan_tourism_gis/ueditor/ueditor.config.js"></script>
-	<script type="text/javascript" src="/jinan_tourism_gis/ueditor/ueditor.all.js"></script>
+	<script type="text/javascript" src="/ji_nan_tourism_gis_old/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="/ji_nan_tourism_gis_old/ueditor/ueditor.all.js"></script>
 	<script src="js/plugins/sweetalert/sweetalert.min.js"></script>
 	<script type="text/javascript">
         var ue = UE.getEditor('container');
@@ -349,7 +349,7 @@
     		}else if(content==null || content==''){
     			alert("请输入内容！");
     		}else{
-    			$.post("/jinan_tourism_gis/blog-addBlog.action",{'title':title,'content':content,'subject':ue.getContentTxt().substr(0,155),'keyWord':keyWord,'sign':blogTypeId},function(result){
+    			$.post("/ji_nan_tourism_gis_old/blog-addBlog.action",{'title':title,'content':content,'subject':ue.getContentTxt().substr(0,155),'keyWord':keyWord,'sign':blogTypeId},function(result){
         			console.log(result);
     				if(result == "1"){
     					alert("博客发布成功！");

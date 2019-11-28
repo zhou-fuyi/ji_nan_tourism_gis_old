@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2018-6-2 23:20:48 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.tourism.gis.bean.Spot_Type_Mapping" table="SPOT_TYPE_MAPPING">
+        <id name="id" type="java.lang.String">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="scenicSpot" class="com.tourism.gis.bean.ScenicSpot" fetch="join">
+            <column name="SCENICSPOT" />
+        </many-to-one>
+        <many-to-one name="scenicType" class="com.tourism.gis.bean.ScenicType" fetch="join">
+            <column name="SCENICTYPE" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

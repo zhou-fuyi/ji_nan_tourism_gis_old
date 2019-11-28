@@ -333,7 +333,7 @@
 		     },
 		     onPageClicked: function (event, originalEvent, type, page) {
 			     //点击事件
-                location.href = "/jinan_tourism_gis/user/spot-loadScenic?pageCode=" + page;
+                location.href = "/ji_nan_tourism_gis_old/user/spot-loadScenic?pageCode=" + page;
             }
 	    }); 
 
